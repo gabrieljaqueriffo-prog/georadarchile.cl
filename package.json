@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy && node scripts/apply-base-path.mjs",
     "check": "node scripts/check-scaffold.mjs && node scripts/audit-site.mjs"
   },
   "devDependencies": {
