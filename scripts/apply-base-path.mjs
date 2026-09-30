@@ -16,6 +16,7 @@ async function rewrite(file) {
   const original = await readFile(file, "utf8");
   const rewritten = original
     .replace(/((?:href|src|action)=["'])\/(?!\/)/g, `$1${basePath}/`)
+    .replace(/((?:srcset|imagesrcset)=["'])([^"']+)(["'])/g, (_, prefix, value, suffix) => `${prefix}${value.replace(/(^|,\s*)\/(?!\/)/g, `$1${basePath}/`)}${suffix}`)
     .replace(/(url\(\s*["']?)\/(?!\/)/g, `$1${basePath}/`)
     .replace(/(url=)\/(?!\/)/g, `$1${basePath}/`)
     .replace(/(location\.replace\(\s*["'])\/(?!\/)/g, `$1${basePath}/`);
