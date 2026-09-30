@@ -7,6 +7,7 @@ export default [
       { label: "Geo Radar GPR", url: "/georadar-gpr/" },
       { label: "LEM y Radio Detección", url: "/lem-radio-deteccion/" },
       { label: "Capacitación GPR", url: "/capacitacion-gpr/" },
+      { label: "Mentoría GPR 1:1", url: "/mentoria-gpr/" },
       { label: "Informes técnicos", url: "/informes-tecnicos/" }
     ]
   },

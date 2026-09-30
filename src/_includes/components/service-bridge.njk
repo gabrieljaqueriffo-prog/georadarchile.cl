@@ -1,0 +1,7 @@
+{% set bridge = bridges[route.url] %}
+{% if bridge %}
+<aside class="service-bridge" aria-label="Servicio relacionado y guías técnicas">
+  <div class="service-bridge-service"><p>{{ bridge.question }}</p><a href="{{ bridge.service.url }}">{{ bridge.service.label }} <span aria-hidden="true">→</span></a></div>
+  <div class="service-bridge-atlas"><p>Para profundizar en GeoRadar.cl</p><ul>{% for item in bridge.atlas %}<li><a href="{{ item.url }}">{{ item.label }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></div>
+</aside>
+{% endif %}

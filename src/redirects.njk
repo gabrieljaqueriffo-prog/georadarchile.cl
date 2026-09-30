@@ -1,0 +1,22 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.from }}/index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<title>Página trasladada | {{ site.name }}</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="{{ site.canonicalOrigin }}{{ redirect.to }}">
+<meta http-equiv="refresh" content="0; url={{ redirect.to }}">
+<script>location.replace({{ redirect.to | dump | safe }} + location.hash);</script>
+</head>
+<body>
+<p>Esta página se trasladó a <a href="{{ redirect.to }}">{{ site.canonicalOrigin }}{{ redirect.to }}</a>.</p>
+</body>
+</html>

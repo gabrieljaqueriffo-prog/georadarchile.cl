@@ -1,0 +1,16 @@
+[
+  { "from": "/blog/categories/georradar", "to": "/blog/tags/geo-radar/", "reason": "Taxonomía antigua trasladada a etiqueta" },
+  { "from": "/copia-de-experiencia", "to": "/experiencia/", "reason": "Página duplicada consolidada" },
+  { "from": "/empresa", "to": "/nosotros/", "reason": "Nombre de sección actualizado" },
+  { "from": "/minería", "to": "/mineria/", "reason": "Normalización de URL sin tilde" },
+  { "from": "/usos-aplicaciones-gpr", "to": "/georadar-gpr/", "reason": "Página antigua consolidada en el servicio GPR" },
+  { "from": "/post/geo-radar-excavacion-exploratoria-prospeccion-no-destructiva", "to": "/post/georradar-antes-de-excavar/", "reason": "Artículo heredado con impresiones (382)" },
+  { "from": "/servicios/lem-radio-deteccion", "to": "/lem-radio-deteccion/", "reason": "Servicio trasladado a la raíz" },
+  { "from": "/blog/tags/deteccion-de-ductos", "to": "/post/localizacion-de-tuberias-ductos-con-georadar/", "reason": "Etiqueta antigua sin equivalente" },
+  { "from": "/post/localizacion-de-ductos-con-georadar", "to": "/post/localizacion-de-tuberias-ductos-con-georadar/", "reason": "Slug antiguo del mismo artículo" },
+  { "from": "/post/localizacion-de-tuberias-ductos-con-georradar", "to": "/post/localizacion-de-tuberias-ductos-con-georadar/", "reason": "Variante ortográfica del slug" },
+  { "from": "/post/como-forma-georradar", "to": "/post/como-funciona-georadar/", "reason": "Slug antiguo del mismo artículo" },
+  { "from": "/post/como-georradar-gpr-explicacion-tecnica", "to": "/post/como-funciona-georadar/", "reason": "Slug antiguo del mismo artículo" },
+  { "from": "/post/que-es-georadar-gpr-chile-prospeccion-no-destructiva-con-georradar-en-chile-gpr", "to": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/", "reason": "Variante sin tilde del slug canónico" },
+  { "from": "/mentoria", "to": "/mentoria-gpr/", "reason": "Ruta corta para la mentoría 1:1 (ATLAS /mentoria/ apunta aquí)" }
+]

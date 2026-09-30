@@ -2,21 +2,32 @@ const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#main-menu');
 
 if (toggle && menu) {
-  const close = () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    menu.dataset.open = 'false';
-  };
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
+  const focusables = () => [toggle, ...menu.querySelectorAll('a[href], button:not([disabled])')].filter((el) => el.offsetParent !== null);
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+  const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
     menu.dataset.open = String(open);
-  });
+    document.documentElement.classList.toggle('menu-open', open);
+    if (open) menu.querySelector('a[href]')?.focus();
+  };
+  toggle.addEventListener('click', () => setOpen(!isOpen()));
   document.addEventListener('keydown', (event) => {
+    if (!isOpen()) return;
     if (event.key === 'Escape') {
-      close();
+      setOpen(false);
       toggle.focus();
+      return;
+    }
+    if (event.key === 'Tab') {
+      const items = focusables();
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     }
   });
+  window.matchMedia('(min-width: 981px)').addEventListener('change', (event) => { if (event.matches) setOpen(false); });
 }
 
 const serviceNav = document.querySelector('.services-subnav');

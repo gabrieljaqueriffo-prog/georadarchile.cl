@@ -1,28 +1,44 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CL">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | {{ site.name }}</title>
-    <meta name="description" content="{{ description or site.description }}">
-    <meta name="robots" content="{{ robots or 'index,follow' }}">
-    <link rel="canonical" href="{{ site.canonicalOrigin }}{{ page.url }}">
+    {%- set pageTitle = title + " | " + site.name -%}
+    {%- set pageDescription = description or site.description -%}
+    {%- set pageUrl = site.canonicalOrigin + page.url -%}
+    {%- set pageImage = site.canonicalOrigin + (route.ogImage or ogImage or site.ogDefault) -%}
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
+    <meta name="robots" content="{% if site.staging %}noindex,nofollow{% else %}{{ robots or 'index,follow' }}{% endif %}">
+    {% if page.url != '/404.html' %}<link rel="canonical" href="{{ pageUrl }}">{% endif %}
     <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:type" content="{{ route.ogType or 'website' }}">
-    <meta property="og:title" content="{{ title }} | {{ site.name }}">
-    <meta property="og:description" content="{{ description or site.description }}">
-    <meta property="og:url" content="{{ site.canonicalOrigin }}{{ page.url }}">
-    {% if route.ogImage %}<meta property="og:image" content="{{ site.canonicalOrigin }}{{ route.ogImage }}">{% endif %}
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:url" content="{{ pageUrl }}">
+    <meta property="og:image" content="{{ pageImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ pageTitle }}">
+    <meta name="twitter:description" content="{{ pageDescription }}">
+    <meta name="twitter:image" content="{{ pageImage }}">
     {% if route.datePublished %}<meta property="article:published_time" content="{{ route.datePublished }}">{% endif %}
     {% if route.dateModified %}<meta property="article:modified_time" content="{{ route.dateModified }}">{% endif %}
-    <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Organization","name":site.name,"url":site.canonicalOrigin,"email":site.contact.email,"telephone":site.contact.phoneDisplay,"sameAs":[site.atlasUrl]} | dump | safe }}</script>
-    <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"WebSite","name":site.name,"url":site.canonicalOrigin,"inLanguage":site.locale} | dump | safe }}</script>
-    {% if route.url == '/instrumentos/' %}
-    <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": site.canonicalOrigin + page.url, "about": [{"@type": "Thing", "name": "IDS GeoRadar Chaser XR"}, {"@type": "Thing", "name": "IDS GeoRadar Stream DP"}, {"@type": "Thing", "name": "IDS GeoRadar Opera XR"}, {"@type": "Thing", "name": "IDS GeoRadar C-thrue"}, {"@type": "Thing", "name": "Leica DS2000"}, {"@type": "Thing", "name": "Leica DS4000"}, {"@type": "Thing", "name": "Localización electromagnética"}], "isPartOf": {"@type": "WebSite", "name": site.name, "url": site.canonicalOrigin} } | dump | safe }}</script>
-    <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": site.canonicalOrigin + "/"}, {"@type": "ListItem", "position": 2, "name": "Tecnología", "item": site.canonicalOrigin + page.url}] } | dump | safe }}</script>
+    {%- set orgId = site.canonicalOrigin + "/#organization" -%}
+    <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Organization","@id":orgId,"name":site.name,"legalName":site.legalName,"url":site.canonicalOrigin + "/","logo":site.canonicalOrigin + site.logo,"email":site.contact.email,"telephone":site.contact.phoneHref,"foundingDate":"2011","areaServed":{"@type":"Country","name":"Chile"},"sameAs":[site.atlasUrl + "/"]} | dump | safe }}</script>
+    <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"WebSite","@id":site.canonicalOrigin + "/#website","name":site.name,"url":site.canonicalOrigin + "/","inLanguage":site.language,"publisher":{"@id":orgId} } | dump | safe }}</script>
+    {% if page.url != '/' and page.url != '/404.html' and title %}
+    <script type="application/ld+json">{{ route | breadcrumbSchema(title, page.url) | dump | safe }}</script>
     {% endif %}
-    <link rel="stylesheet" href="/assets/css/site.css?v=20260929">
-    <script src="/assets/js/site.js" defer></script>
+    {% set svc = schema.services[page.url] %}
+    {% if svc %}
+    <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Service","name":svc.name,"serviceType":svc.serviceType,"description":pageDescription,"url":pageUrl,"provider":{"@id":orgId},"areaServed":{"@type":"Country","name":"Chile"},"inLanguage":site.language} | dump | safe }}</script>
+    {% endif %}
+    {% if route.url == '/instrumentos/' %}
+    <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": pageUrl, "inLanguage": site.language, "about": [{"@type": "Thing", "name": "IDS GeoRadar Chaser XR"}, {"@type": "Thing", "name": "IDS GeoRadar Stream DP"}, {"@type": "Thing", "name": "IDS GeoRadar Opera XR"}, {"@type": "Thing", "name": "IDS GeoRadar C-thrue"}, {"@type": "Thing", "name": "Leica DS2000"}, {"@type": "Thing", "name": "Leica DS4000"}, {"@type": "Thing", "name": "Localización electromagnética"}], "isPartOf": {"@id": site.canonicalOrigin + "/#website"} } | dump | safe }}</script>
+    {% endif %}
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260930">
+    <script src="/assets/js/site.js?v=20260930" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>

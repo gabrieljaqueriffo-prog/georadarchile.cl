@@ -39,6 +39,12 @@ for (const file of htmlFiles) {
   const source = await readFile(file, "utf8");
   const route = routeFor(file);
   if (route === "/vista-mobile/") continue;
+  if (/<meta\b[^>]*http-equiv=["']refresh["']/i.test(source)) {
+    const target = source.match(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']https:\/\/www\.georadarchile\.cl([^"']+)["']/i);
+    if (!target) findings.push(`${route}: redirección sin canonical`);
+    else if (!await internalTargetExists(file, target[1])) findings.push(`${route}: redirección hacia ruta inexistente ${target[1]}`);
+    continue;
+  }
   const checks = {
     h1: count(source, /<h1\b/gi),
     title: count(source, /<title>[^<]+<\/title>/gi),
@@ -48,7 +54,7 @@ for (const file of htmlFiles) {
 
   if (checks.h1 !== 1) findings.push(`${route}: debe tener 1 H1; tiene ${checks.h1}`);
   if (checks.title !== 1) findings.push(`${route}: debe tener 1 title; tiene ${checks.title}`);
-  if (checks.canonical !== 1) findings.push(`${route}: debe tener 1 canonical; tiene ${checks.canonical}`);
+  if (checks.canonical !== (route === "/404.html" ? 0 : 1)) findings.push(`${route}: debe tener 1 canonical; tiene ${checks.canonical}`);
   if (checks.description !== 1) findings.push(`${route}: debe tener 1 meta description; tiene ${checks.description}`);
 
   for (const image of source.matchAll(/<img\b([^>]*)>/gi)) {
