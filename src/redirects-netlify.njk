@@ -2,6 +2,7 @@
 permalink: _redirects
 eleventyExcludeFromCollections: true
 ---
-# Generado desde src/_data/redirects.json. En GitHub Pages se usan las páginas HTML de redirección.
+# Cloudflare Pages: variantes heredadas con y sin barra final.
 {% for r in redirects %}{{ r.from }} {{ r.to }} 301
+{{ r.from }}/ {{ r.to }} 301
 {% endfor %}
