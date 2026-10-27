@@ -15,6 +15,12 @@ try {
     const payload = JSON.parse(options.body);
     assert.deepEqual(payload.to, ['gabriel@georadarchile.cl']);
     assert.equal(payload.reply_to, 'test@example.com');
+    assert.match(payload.html, /Solicitud de evaluación GPR/);
+    assert.match(payload.text, /Descripción del proyecto:/);
+    if (payload.text.includes('<script>')) {
+      assert(!payload.html.includes('<script>'));
+      assert(payload.html.includes('&lt;script&gt;'));
+    }
     return Response.json({id:'mock'});
   };
   assert.equal((await onRequestPost({request:make(),env:{}})).status,503);
@@ -22,6 +28,7 @@ try {
   assert.equal(calls,0);
   assert.equal((await onRequestPost({request:make(),env})).status,200);
   assert.equal(calls,2);
+  assert.equal((await onRequestPost({request:make({descripcion:'<script>alert("test")</script>'}),env})).status,200);
   globalThis.fetch = async () => Response.json({success:true,hostname:'attacker.example',action:'contact'});
   assert.equal((await onRequestPost({request:make(),env})).status,403);
   globalThis.fetch = async url => url.includes('siteverify') ? Response.json({success:true,hostname:'example.com',action:'contact'}) : new Response('',{status:429});

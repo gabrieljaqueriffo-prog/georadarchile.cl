@@ -17,11 +17,14 @@
   const message = (text, focus = false) => {
     status.textContent = text;
     status.hidden = false;
-    if (focus) status.focus();
+    if (focus) {
+      status.focus({ preventScroll: true });
+      status.scrollIntoView?.({ behavior: 'auto', block: 'center' });
+    }
   };
   const resetVerification = () => {
     token = '';
-    if (widgetId !== undefined && window.turnstile) window.turnstile.reset(widgetId);
+    if (!sent && widgetId !== undefined && window.turnstile) window.turnstile.reset(widgetId);
     update();
   };
   form.querySelectorAll('input:not([type="file"]):not([type="checkbox"]), textarea').forEach(input => {
@@ -47,8 +50,12 @@
       const result = await response.json();
       if (response.ok) {
         sent = true;
+        form.dataset.sent = 'true';
         form.reset();
-        message('Su solicitud fue aceptada para envío. Esto no confirma una cotización. Revisaremos los antecedentes para responderle.', true);
+        status.innerHTML = '<p class="contact-success-label">Solicitud enviada</p><h2>Gracias por contarnos su proyecto.</h2><p>Su solicitud fue enviada para revisión. No necesita volver a completar el formulario.</p><p>Le responderemos al correo que indicó. Nuestra respuesta inicial habitual es en menos de 24 horas hábiles.</p><p>Esto no confirma una cotización: primero evaluaremos el alcance y los antecedentes.</p>';
+        status.hidden = false;
+        status.focus({ preventScroll: true });
+        status.scrollIntoView?.({ behavior: 'auto', block: 'center' });
       } else {
         message(typeof result.message === 'string' ? result.message : 'No pudimos confirmar el envío. Escríbanos a gabriel@georadarchile.cl antes de reintentar.', true);
       }
@@ -71,9 +78,9 @@
       action: 'contact',
       size: 'flexible',
       language: 'es',
-      callback: value => { token = value; update(); },
-      'expired-callback': () => { token = ''; update(); message('La verificación expiró. Complétela nuevamente para enviar.'); },
-      'error-callback': () => { token = ''; update(); message('No pudimos completar la verificación. Recargue la página o escriba a gabriel@georadarchile.cl.'); }
+      callback: value => { if (sent) return; token = value; update(); },
+      'expired-callback': () => { if (sent || sending) return; token = ''; update(); message('La verificación expiró. Complétela nuevamente para enviar.'); },
+      'error-callback': () => { if (sent || sending) return; token = ''; update(); message('No pudimos completar la verificación. Recargue la página o escriba a gabriel@georadarchile.cl.'); }
     });
   };
   const script = document.createElement('script');

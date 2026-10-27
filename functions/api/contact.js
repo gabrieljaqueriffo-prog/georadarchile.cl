@@ -1,5 +1,7 @@
 const LIMIT = 8 * 1024 * 1024;
 const FIELDS = ['objetivo', 'sector', 'descripcion', 'ubicacion', 'dimension', 'profundidad', 'superficie', 'fecha', 'acceso', 'nombre', 'empresa', 'email', 'telefono'];
+const LABELS = ['Objetivo', 'Sector', 'Descripción del proyecto', 'Ubicación', 'Superficie o longitud estimada', 'Profundidad esperada', 'Tipo de superficie', 'Fecha o ventana de trabajo', 'Condición de acceso', 'Nombre', 'Empresa', 'Correo electrónico', 'Teléfono'];
+const escapeHtml = value => value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 const reply = (status, message) => Response.json({ message }, { status, headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' } });
 
 export async function onRequestPost({ request, env }) {
@@ -58,7 +60,10 @@ export async function onRequestPost({ request, env }) {
     const sent = await fetch('https://api.resend.com/emails', {
       method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ from: env.CONTACT_FROM, to: ['gabriel@georadarchile.cl'], reply_to: data.email,
-        subject: 'Solicitud de evaluación GPR desde la web', text: FIELDS.map(key => `${key}: ${data[key] || '(sin indicar)'}`).join('\n\n') + '\n\nAutorización de uso de antecedentes: aceptada.', attachments }), signal: AbortSignal.timeout(15000)
+        subject: 'Solicitud de evaluación GPR desde la web',
+        text: FIELDS.map((key, index) => `${LABELS[index]}: ${data[key] || '(sin indicar)'}`).join('\n\n') + '\n\nAutorización de uso de antecedentes: aceptada.',
+        html: '<!doctype html><html lang="es"><body style="margin:0;padding:24px;background:#f5f1eb;font-family:Arial,sans-serif;color:#243034"><div style="max-width:680px;margin:auto;background:#fff;padding:28px"><p style="color:#984326;font-weight:bold">GEO RADAR CHILE</p><h1 style="font-size:24px">Solicitud de evaluación GPR</h1><p>Una persona envió los siguientes antecedentes desde el formulario web. Puede usar Responder para contactarla.</p><table style="width:100%;border-collapse:collapse">' + FIELDS.map((key, index) => '<tr><th scope="row" style="width:35%;text-align:left;vertical-align:top;padding:12px 8px;border-bottom:1px solid #e5ded5;font-size:14px">' + LABELS[index] + '</th><td style="padding:12px 8px;border-bottom:1px solid #e5ded5;overflow-wrap:anywhere;word-break:break-word;font-size:14px">' + escapeHtml(data[key] || '(sin indicar)').replace(/\r?\n/g, '<br>') + '</td></tr>').join('') + '</table><p style="font-size:12px;color:#625c54">Autorización de uso de antecedentes: aceptada. Esta solicitud requiere evaluación y no constituye una cotización confirmada.</p></div></body></html>',
+        attachments }), signal: AbortSignal.timeout(15000)
     });
     if (!sent.ok) return reply(502, 'No pudimos enviar la solicitud. Contacte a gabriel@georadarchile.cl antes de reintentar.');
     return reply(200, 'La solicitud fue aceptada para envío. Revisaremos los antecedentes para responderle.');

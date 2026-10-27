@@ -237,6 +237,14 @@
 .contact-security p { color: var(--ink-soft); font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
 .contact-security [data-turnstile] { width: 100%; min-width: 0; margin-top: 16px; }
 .contact-submit button:disabled { opacity: .6; cursor: not-allowed; }
+.contact-form[data-sent="true"] > header,
+.contact-form[data-sent="true"] > fieldset,
+.contact-form[data-sent="true"] > .contact-security,
+.contact-form[data-sent="true"] > .contact-submit { display: none; }
+.contact-form[data-sent="true"] .contact-form-status { margin: clamp(24px, 4vw, 48px); padding: clamp(24px, 4vw, 40px); border-top: 4px solid #b8d8b8; scroll-margin-top: 120px; }
+.contact-form-status .contact-success-label { margin: 0 0 16px; color: #c7e4cb; font-size: 14px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.contact-form-status h2 { margin: 0 0 20px; color: white; font-size: clamp(26px, 3vw, 38px); line-height: 1.15; }
+.contact-form[data-sent="true"] .contact-form-status p { font-size: 16px; }
 .contact-guide { position: sticky; top: 112px; }
 .contact-guide > div:first-child { padding: 26px; background: #253034; }
 .contact-guide .home-section-tag { color: #e6a080; }
