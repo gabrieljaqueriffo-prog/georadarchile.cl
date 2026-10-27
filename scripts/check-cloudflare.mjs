@@ -4,7 +4,16 @@ import { readFile, access } from 'node:fs/promises';
 const redirects = JSON.parse(await readFile('src/_data/redirects.json', 'utf8'));
 const rules = (await readFile('_site/_redirects', 'utf8')).split(/\r?\n/).map(line => line.trim()).filter(line => line && !line.startsWith('#'));
 assert.equal(rules.length, redirects.length * 2);
+const sourcePaths = new Set();
+for (const { from } of redirects) {
+  for (const source of [from, `${from}/`]) {
+    const path = decodeURIComponent(source);
+    assert(!sourcePaths.has(path), `Origen duplicado: ${source}`);
+    sourcePaths.add(path);
+  }
+}
 for (const { from, to } of redirects) {
+  assert(!sourcePaths.has(decodeURIComponent(to)), `Cadena de redirección: ${from} -> ${to}`);
   for (const source of [from, `${from}/`]) {
     assert(rules.includes(`${source} ${to} 301`), `Falta redirect: ${source}`);
     assert.notEqual(source, to, `Bucle: ${source}`);
