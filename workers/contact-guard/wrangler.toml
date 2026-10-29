@@ -1,0 +1,11 @@
+name = "georadarchile-contact-guard"
+main = "index.js"
+compatibility_date = "2026-10-29"
+workers_dev = false
+preview_urls = false
+
+# Verify namespace ID is unused in this account before deployment.
+[[ratelimits]]
+name = "CONTACT_ATTEMPTS"
+namespace_id = "2026102901"
+simple = { limit = 10, period = 60 }

@@ -13,6 +13,22 @@ export async function onRequestPost({ request, env }) {
   if (!allowed.includes(url.hostname) || request.headers.get('Origin') !== url.origin) return reply(403, 'Origen no permitido.');
   if (!request.headers.get('Content-Type')?.startsWith('multipart/form-data')) return reply(415, 'Formato de solicitud no permitido.');
   if (Number(request.headers.get('Content-Length')) > LIMIT) return reply(413, 'Los archivos y datos superan el límite de 8 MB.');
+  // Opt in only after the private Service binding has been configured.
+  if (env.CONTACT_RATE_LIMIT_ENABLED === 'true') {
+    const ip = request.headers.get('CF-Connecting-IP');
+    if (!env.CONTACT_GUARD?.fetch || !ip) return reply(503, 'El envío no está disponible temporalmente. Escríbanos a gabriel@georadarchile.cl.');
+    try {
+      const decision = await env.CONTACT_GUARD.fetch('https://contact-guard/check', {
+        method: 'POST', headers: { 'X-Contact-Client-IP': ip }, signal: AbortSignal.timeout(3000)
+      });
+      if (decision.status === 429) {
+        const response = reply(429, 'Se alcanzó el límite temporal de solicitudes. Espere un minuto antes de volver a intentarlo.');
+        response.headers.set('Retry-After', '60');
+        return response;
+      }
+      if (decision.status !== 204) return reply(503, 'El envío no está disponible temporalmente. Escríbanos a gabriel@georadarchile.cl.');
+    } catch { return reply(503, 'El envío no está disponible temporalmente. Escríbanos a gabriel@georadarchile.cl.'); }
+  }
   try {
     // Contar también cuerpos sin Content-Length antes de interpretar el multipart.
     const reader = request.body?.getReader();
