@@ -1,0 +1,150 @@
+[
+  {
+    "Name": "georadarchile.cl",
+    "Type": 2,
+    "TTL": 86257,
+    "NameHost": "adel.ns.cloudflare.com",
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 2,
+    "TTL": 86257,
+    "NameHost": "carmelo.ns.cloudflare.com",
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 1,
+    "TTL": 180,
+    "NameHost": null,
+    "IPAddress": "185.230.63.186",
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 1,
+    "TTL": 180,
+    "NameHost": null,
+    "IPAddress": "185.230.63.107",
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 1,
+    "TTL": 180,
+    "NameHost": null,
+    "IPAddress": "185.230.63.171",
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "www.georadarchile.cl",
+    "Type": 5,
+    "TTL": 157,
+    "NameHost": "cdn3.wixdns.net",
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 15,
+    "TTL": 157,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": "mx3.zoho.com",
+    "Preference": 30,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 15,
+    "TTL": 157,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": "mx.zoho.com",
+    "Preference": 10,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 15,
+    "TTL": 157,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": "mx2.zoho.com",
+    "Preference": 20,
+    "Strings": null
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 16,
+    "TTL": 300,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": [
+      "v=spf1 include:zohomail.com ~all"
+    ]
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 16,
+    "TTL": 300,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": [
+      "zoho-verification=zb16841319.zmverify.zoho.com"
+    ]
+  },
+  {
+    "Name": "georadarchile.cl",
+    "Type": 16,
+    "TTL": 300,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": [
+      "google-site-verification=HM1tuvOw2j8bxBZCdB36hNJk4bh9kRViWBX9bhOpCQ0"
+    ]
+  },
+  {
+    "Name": "_dmarc.georadarchile.cl",
+    "Type": 5,
+    "TTL": 300,
+    "NameHost": "_dmarc.wixemails.com",
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": null
+  },
+  {
+    "Name": "_dmarc.wixemails.com",
+    "Type": 16,
+    "TTL": 300,
+    "NameHost": null,
+    "IPAddress": null,
+    "NameExchange": null,
+    "Preference": null,
+    "Strings": [
+      "v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email"
+    ]
+  }
+]

@@ -1,10 +1,28 @@
+## Configuración vigente para el lanzamiento — 31 de octubre de 2026
+
+Esta sección sustituye las instrucciones posteriores que piden editar tres archivos o retirar check-cloudflare del comando de build.
+
+- Comando de build en Pages: `npm run build && npm run check && node scripts/check-cloudflare.mjs`.
+- Para staging y Preview: dejar SITE_ENV sin definir.
+- Para el corte comercial: definir SITE_ENV=production **solo en Production**, con rama main.
+- El build coordina meta robots, robots.txt y _headers. Una rama diferente de main conserva noindex aunque herede SITE_ENV.
+- El subdominio principal pages.dev de Production debe redirigirse al dominio canónico al completar el corte.
+- CONTACT_HOSTS debe incluir www.georadarchile.cl y georadarchile.cl, además del host temporal durante la transición. Añadir los mismos dominios al widget Turnstile. No cambiar claves ni los MX/TXT de correo.
+- No conectar el dominio comercial hasta verificar el despliegue actualizado, el formulario y los registros de reversión.
+
 # Hosting definitivo elegido: Cloudflare Pages Free
 
-Fecha: 2026-10-02. Preparación local; todavía no desplegado en Cloudflare.
+Revisado: 2026-11-02. Staging desplegado en https://georadarchile-cl.pages.dev.
 
 Decisión confirmada por el usuario. Build local superado: 38 rutas canónicas,
-54 documentos auditados y 28 reglas de redirección comprobadas. El workflow
-de validación está preparado, pero aún no se ha ejecutado en GitHub.
+54 documentos auditados. Commit `28f35c9` publicado el 2026-10-03; workflow
+de validación exitoso. Las 28 variantes heredadas se comprobaron en Cloudflare
+mediante HTTP 301, incluida `/empresa/`. Staging conserva noindex.
+
+El backend y la interfaz del formulario están implementados y sus pruebas
+locales pasan. Falta comprobar entrega real de un adjunto en Zoho desde el
+staging actualizado. Ver `FORMULARIO_RESEND.md` y
+`migration/AVANCE_2026-11-02.md` para el estado y las limitaciones.
 
 Eleventy genera HTML estático y Cloudflare permite redirecciones HTTP 301,
 cabeceras y Functions para el formulario. GitHub conserva el código.
@@ -13,7 +31,7 @@ El staging de GitHub Pages existente se mantiene hasta validar su reemplazo.
 ## Configuración del primer staging
 
 1. Subir al repositorio remoto los cambios preparados en `README.md`,
-   `src/_headers`, `src/redirects-netlify.njk`, `.github/workflows/validate.yml`,
+   `src/headers.njk`, `src/redirects-netlify.njk`, `.github/workflows/validate.yml`,
    `scripts/check-cloudflare.mjs` y esta guía. No incluir `Claude outputs/`.
    El workflow de GitHub Pages existente seguirá publicando su staging al
    hacer push a main; se retirará cuando Cloudflare haya pasado la revisión.
@@ -40,15 +58,15 @@ El staging de GitHub Pages existente se mantiene hasta validar su reemplazo.
 | Environment variable | `NODE_VERSION=22`, también en previews |
 | BASE_PATH | No definir en Cloudflare |
 
-El comando anterior corresponde a staging y exige noindex. Antes del corte
-a producción cambiarlo a `npm run build && npm run check`: el comprobador
-`check-cloudflare.mjs` está diseñado para impedir un staging indexable.
+El mismo comando valida staging y producción. Para staging y Preview dejar
+`SITE_ENV` sin definir. Para el corte definir `SITE_ENV=production` solo en
+Production, rama `main`. No retirar `check-cloudflare.mjs` del build.
 
 - Conectar el repositorio `gabrieljaqueriffo-prog/georadarchile.cl` mediante integración Git.
 - Rama: `main`. Directorio raíz: raíz del repositorio.
-- Comando: `npm run build`. Salida: `_site`.
+- Comando: `npm run build && npm run check && node scripts/check-cloudflare.mjs`. Salida: `_site`.
 - Variable `NODE_VERSION`: `22`. No definir `BASE_PATH`.
-- Mantener `site.staging: true`, meta robots y `_headers` con noindex.
+- Dejar `SITE_ENV` sin definir: el build genera meta robots, robots.txt y `_headers` de staging.
 - Publicar primero en el subdominio temporal `pages.dev`, sin asociar el dominio.
 - Ejecutar `npm ci`, `npm run build`, `npm run check` y `node scripts/check-cloudflare.mjs` antes de publicar.
 
@@ -76,9 +94,10 @@ Pendientes: Playwright y axe en CI, formulario y QA contra el PDF aprobado.
 4. Sustituir los nameservers en el registrador por los dos que asigne
    Cloudflare. Mantener todavía los registros web apuntando a Wix para
    separar el traslado DNS del cambio de sitio. Verificar web y correo.
-5. Con QA y formulario cerrados, preparar el build de producción y cambiar
-   el comando de build según lo indicado arriba. Retirar noindex de
-   `src/_data/site.js` y `src/_headers`; revisar `robots.txt` y sitemap.
+5. Con QA y formulario cerrados, definir `SITE_ENV=production` únicamente
+   en Production, rama `main`. Conservar el comando completo de validación.
+   El build coordina meta robots, robots.txt y cabeceras; no editar estos
+   archivos manualmente. Revisar la salida y el sitemap.
 6. En el proyecto Pages abrir **Custom domains → Set up a domain** y asociar
    `www.georadarchile.cl` y `georadarchile.cl`. Aplicar los registros que indique
    Cloudflare; retirar únicamente A/AAAA/CNAME web incompatibles con Pages.
@@ -107,8 +126,8 @@ Zoho. Conservar esos registros al trasladar la zona. Para usar el dominio
 raíz en Pages, Cloudflare requiere la zona en su cuenta y sus nameservers.
 Asociar el dominio desde Pages antes de cambiar registros del sitio.
 
-Preparar un build de producción: `site.staging: false`, retirar el
-`X-Robots-Tag` de staging y revisar robots, sitemap y canonical. Verificar
+Preparar producción con `SITE_ENV=production` solo en Production/main;
+el build retira el bloqueo de indexación. Revisar robots, sitemap y canonical. Verificar
 HTTPS, redirección al hostname canónico, contacto y Search Console.
 Guardar los registros anteriores para rollback. Mantener Wix durante los
 30 días de seguimiento y cancelarlo solo después de comprobar estabilidad.

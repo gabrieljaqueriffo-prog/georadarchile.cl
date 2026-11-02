@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-26T17:21:36.954Z",
+  "method": "HTTP SSR main text, no browser DOM; comparison of content before selecting redirects",
+  "rows": [
+    {
+      "path": "/industrias",
+      "status": 200,
+      "title": "Geo Radar Chile | GPR para Minería, Construcción y Utilities | Chile",
+      "text": "Servicios ▾ Geo Radar | GPR LEM y Radio Detección Capacitación GPR Informes Técnicos Industrias &middot; Sectores de aplicaci&oacute;n Trabajamos donde la ingenier&iacute;a no admite errores. M&aacute;s de 220 proyectos en cuatro sectores distintos. Cada industria tiene sus propias condiciones de subsuelo, sus propios riesgos y sus propios requerimientos t&eacute;cnicos. Conocemos todos. SELECCIONA TU SECTOR &iquest;En qu&eacute; industria operas? Cada sector tiene sus propias aplicaciones GPR. Selecciona el tuyo para ver los detalles espec&iacute;ficos de metodolog&iacute;a, clientes de referencia y casos ejecutados. GRAN MINER&Iacute;A - LITIO - COBRE Miner&iacute;a ⛏ Plantas concentradoras, fundiciones y salares. El mercado m&aacute;s exigente t&eacute;cnicamente y donde m&aacute;s proyectos hemos ejecutado en Chile. CODELCO - SQM - ESCONDIDA - ALBEMARLE - COLLAHUASI Ver más detalles → AGUA - GAS - ELECTRICIDAD Utilities ⚡ Redes soterradas de agua potable, gas natural, electricidad y telecomunicaciones. Localizaci&oacute;n y mapeo preciso antes de intervenir. ENAP - SAESA - MOLYMET - AGUAS PAC&Iacute;FICO Ver más detalles → CIVIL - VIAL - INFRAESTRUCTURA Construcci&oacute;n 🏗 Excavaciones urbanas, socalzados, fundaciones profundas y obras en zonas con infraestructura soterrada densa sin planos actualizados. METRO SANTIAGO - SACYR - AVO II - MUNICIPALIDADES Ver más detalles → FORENSE - JUDICIAL - DDHH Peritajes Judiciales ⚖ Exploraci&oacute;n no invasiva para PDI, Fiscal&iacute;as y Poder Judicial. Preserva la cadena de custodia mientras identifica anomal&iacute;as subterr&aacute;neas. PDI - LABOCAR - FISCAL&Iacute;A - PODER JUDICIAL Ver más detalles →"
+    },
+    {
+      "path": "/industrias/mineria",
+      "status": 200,
+      "title": "Geo Radar Chile | GPR para Minería, Construcción y Utilities | Chile",
+      "text": "Servicios ▾ Geo Radar | GPR LEM y Radio Detección Capacitación GPR Informes Técnicos Industrias &middot; Sectores de aplicaci&oacute;n Trabajamos donde la ingenier&iacute;a no admite errores. M&aacute;s de 220 proyectos en cuatro sectores distintos. Cada industria tiene sus propias condiciones de subsuelo, sus propios riesgos y sus propios requerimientos t&eacute;cnicos. Conocemos todos. SELECCIONA TU SECTOR &iquest;En qu&eacute; industria operas? Cada sector tiene sus propias aplicaciones GPR. Selecciona el tuyo para ver los detalles espec&iacute;ficos de metodolog&iacute;a, clientes de referencia y casos ejecutados. GRAN MINER&Iacute;A - LITIO - COBRE Miner&iacute;a ⛏ Plantas concentradoras, fundiciones y salares. El mercado m&aacute;s exigente t&eacute;cnicamente y donde m&aacute;s proyectos hemos ejecutado en Chile. CODELCO - SQM - ESCONDIDA - ALBEMARLE - COLLAHUASI Ver más detalles → AGUA - GAS - ELECTRICIDAD Utilities ⚡ Redes soterradas de agua potable, gas natural, electricidad y telecomunicaciones. Localizaci&oacute;n y mapeo preciso antes de intervenir. ENAP - SAESA - MOLYMET - AGUAS PAC&Iacute;FICO Ver más detalles → CIVIL - VIAL - INFRAESTRUCTURA Construcci&oacute;n 🏗 Excavaciones urbanas, socalzados, fundaciones profundas y obras en zonas con infraestructura soterrada densa sin planos actualizados. METRO SANTIAGO - SACYR - AVO II - MUNICIPALIDADES Ver más detalles → FORENSE - JUDICIAL - DDHH Peritajes Judiciales ⚖ Exploraci&oacute;n no invasiva para PDI, Fiscal&iacute;as y Poder Judicial. Preserva la cadena de custodia mientras identifica anomal&iacute;as subterr&aacute;neas. PDI - LABOCAR - FISCAL&Iacute;A - PODER JUDICIAL Ver más detalles →"
+    },
+    {
+      "path": "/industrias/construccion",
+      "status": 200,
+      "title": "Geo Radar Chile | GPR para Minería, Construcción y Utilities | Chile",
+      "text": "Servicios ▾ Geo Radar | GPR LEM y Radio Detección Capacitación GPR Informes Técnicos Industrias &middot; Sectores de aplicaci&oacute;n Trabajamos donde la ingenier&iacute;a no admite errores. M&aacute;s de 220 proyectos en cuatro sectores distintos. Cada industria tiene sus propias condiciones de subsuelo, sus propios riesgos y sus propios requerimientos t&eacute;cnicos. Conocemos todos. SELECCIONA TU SECTOR &iquest;En qu&eacute; industria operas? Cada sector tiene sus propias aplicaciones GPR. Selecciona el tuyo para ver los detalles espec&iacute;ficos de metodolog&iacute;a, clientes de referencia y casos ejecutados. GRAN MINER&Iacute;A - LITIO - COBRE Miner&iacute;a ⛏ Plantas concentradoras, fundiciones y salares. El mercado m&aacute;s exigente t&eacute;cnicamente y donde m&aacute;s proyectos hemos ejecutado en Chile. CODELCO - SQM - ESCONDIDA - ALBEMARLE - COLLAHUASI Ver más detalles → AGUA - GAS - ELECTRICIDAD Utilities ⚡ Redes soterradas de agua potable, gas natural, electricidad y telecomunicaciones. Localizaci&oacute;n y mapeo preciso antes de intervenir. ENAP - SAESA - MOLYMET - AGUAS PAC&Iacute;FICO Ver más detalles → CIVIL - VIAL - INFRAESTRUCTURA Construcci&oacute;n 🏗 Excavaciones urbanas, socalzados, fundaciones profundas y obras en zonas con infraestructura soterrada densa sin planos actualizados. METRO SANTIAGO - SACYR - AVO II - MUNICIPALIDADES Ver más detalles → FORENSE - JUDICIAL - DDHH Peritajes Judiciales ⚖ Exploraci&oacute;n no invasiva para PDI, Fiscal&iacute;as y Poder Judicial. Preserva la cadena de custodia mientras identifica anomal&iacute;as subterr&aacute;neas. PDI - LABOCAR - FISCAL&Iacute;A - PODER JUDICIAL Ver más detalles →"
+    },
+    {
+      "path": "/mineria",
+      "status": 200,
+      "title": "Geo Radar Minería Chile | Codelco · SQM · BHP | GPR",
+      "text": "VOLVER A INDUSTRIAS GRAN MINER&Iacute;A - COBRE - LITIO - CHILE Georradar GPR para la gran miner&iacute;a chilena: Codelco, BHP, SQM En la gran miner&iacute;a, intervenir el subsuelo sin informaci&oacute;n previa no es un ahorro &mdash; es una apuesta. Geo Radar Chile lleva m&aacute;s de 29 a&ntilde;os protegiendo obras en las principales faenas del pa&iacute;s. COTIZAR PARA FAENA La infraestructura subterr&aacute;nea de una planta minera se acumula durante d&eacute;cadas. Concentraductos, acueductos, l&iacute;neas el&eacute;ctricas y fundaciones conviven bajo las plataformas con documentaci&oacute;n frecuentemente desactualizada. Excavar sin GPR en ese contexto es apostar contra la seguridad de las personas y la continuidad operacional de la planta. &iquest;POR QU&Eacute; EL GEO RADAR ES CR&Iacute;TICO EN MINER&Iacute;A? 📋 Planos desactualizados Las modificaciones de proceso no documentadas son la norma. El GPR verifica la realidad del subsuelo sin excavar. 🌀 Concentraductos Pulpa de mineral, agua industrial y &aacute;cido corriendo bajo las plataformas. Identificaci&oacute;n exacta antes de excavar. ​ ⚡ L&iacute;neas AT soterradas Alta tensi&oacute;n bajo las plataformas. LEM previo obligatorio antes de cualquier barrido GPR en faena. ​ 🏗 Fundaciones ocultas Estructuras de equipos anteriores, c&aacute;maras de registro y estanques abandonados no documentados en los planos actuales. 🕳 Vac&iacute;os y socavones Cr&iacute;ticos bajo estructuras pesadas. Un vac&iacute;o no detectado es un riesgo de colapso inminente e inaceptable. ​ 🛡 Normativa del mandante Codelco, SQM y BHP exigen verificaci&oacute;n GPR antes de aprobar excavaciones en zonas con infraestructura existente. ​ CLIENTES DE REFERENCIA EN MINER&Iacute;A CLIENTES DE REFERENCIA EN INGENIER&Iacute;A"
+    },
+    {
+      "path": "/construccion",
+      "status": 200,
+      "title": "GPR Construcción Chile | Excavaciones Seguras | Geo Radar",
+      "text": "VOLVER A INDUSTRIAS CONSTRUCCI&Oacute;N CIVIL - INFRAESTRUCTURA Georradar en construcci&oacute;n: sepa exactamente qu&eacute; hay abajo antes de excavar. En construcci&oacute;n, las sorpresas del subsuelo se pagan caro: un cable cortado, una tuber&iacute;a rota, un vac&iacute;o no detectado. Geo Radar Chile lleva m&aacute;s de 29 a&ntilde;os previniendo esas sorpresas. COTIZAR PARA OBRA En geo radar construcci&oacute;n obras civiles en Chile, cada excavaci&oacute;n sin prospecci&oacute;n previa es un riesgo innecesario. Geo Radar Chile ofrece liberaci&oacute;n de &aacute;rea para excavaci&oacute;n con GPR, eliminando incertidumbre antes del primer golpe de retroexcavadora. Nuestra especializaci&oacute;n en detecci&oacute;n de ductos antes de excavar en Santiago ha protegido cientos de proyectos urbanos de da&ntilde;os costosos a redes soterradas. Desde socalzado de fundaciones con GPR para detectar interferencias hasta inspecci&oacute;n de pavimentos con georadar en Chile para proyectos viales, cubrimos el ciclo completo de infraestructura civil. Trabajamos con las principales constructoras del pa&iacute;s en proyectos donde la detecci&oacute;n de ductos antes de excavar es cr&iacute;tica: edificios corporativos, autopistas concesionadas, ampliaciones de aeropuertos, obras sanitarias urbanas.&nbsp; APLICACIONES EN CONSTRUCCI&Oacute;N 🚧 Liberaci&oacute;n de &aacute;reas Verificaci&oacute;n de interferencias soterradas antes de iniciar cualquier movimiento de tierra en zonas con infraestructura existente. 🏙 Zonas urbanas congestionadas Donde no es posible excavar sin informaci&oacute;n previa por la densidad de servicios soterrados en la v&iacute;a p&uacute;blica. 🏛 Socalzados y fundaciones Detecci&oacute;n de estructuras existentes, redes soterradas y estratigraf&iacute;a antes de dise&ntilde;ar fundaciones especiales o micropilotes. 🔍 Estudios geot&eacute;cnicos Complemento al sondaje mec&aacute;nico: identificaci&oacute;n de rellenos, napas superficiales y cambios de estratigraf&iacute;a. 🛣 Inspecci&oacute;n de pavimentos Espesores de carpeta asf&aacute;ltica, detecci&oacute;n de vac&iacute;os bajo pavimento y evaluaci&oacute;n de capas de base. ​ 📐 Instalaci&oacute;n de nuevas redes Trazado de servicios existentes antes de tender redes de agua, gas o electricidad. Evita interferencias de instalaci&oacute;n. CLIENTES DE REFERENCIA EN CONSTRUCCI&Oacute;N"
+    },
+    {
+      "path": "/blog/hashtags/Georadar",
+      "status": 200,
+      "title": "#Georadar",
+      "text": "Todos los post Minería Construcción Utilities Peritajes Forenses Guías Técnicas Precios y Servicios Servicios GPR Localización de tuberías y ductos con georadar: cómo ubicar lo que está bajo tierra sin excavar Antes de excavar, el georradar GPR localiza tuberías, ductos y cables enterrados sin tocar el terreno. Geo Radar Chile, empresa desde 2011 con experiencia desde 1997, explica cómo funciona la detección, qué tipos de elementos se pueden localizar y cuándo combinar GPR con LEM y radiodetección. Gabriel Jaque 2 jun 4 min de lectura"
+    },
+    {
+      "path": "/blog/tags/geo-radar",
+      "status": 200,
+      "title": "Geo radar | Geo Radar Chile",
+      "text": "Todos los post Minería Construcción Utilities Peritajes Forenses Guías Técnicas Precios y Servicios Servicios GPR Capacitación en georradar GPR: aprender a adquirir, procesar e interpretar datos Una capacitación en georradar GPR debería incluir planificación del levantamiento, configuración del equipo, adquisición y control de calidad de los datos, lectura de radargramas, procesamiento e interpretación. Según la aplicación, también puede incorporar diseño de grillas, GNSS y localización electromagnética. Gabriel Jaque 25 sept 6 min de lectura Georradar en minería: seguridad antes de excavar, perforar o intervenir El georradar en minería ayuda a detectar interferencias, ductos, cables y posibles cavidades antes de excavar o perforar. Gabriel Jaque explica qué información aporta el GPR, cuáles son sus limitaciones y qué antecedentes permiten evaluar una faena. Gabriel Jaque 23 ago 5 min de lectura Estudio con georradar: ¿es lo mismo que inspección o levantamiento? Estudio con georradar: ¿es lo mismo que inspección o levantamiento? Artículo que aclara que &quot;estudio&quot;, &quot;inspección&quot; y &quot;levantamiento&quot; con georradar no son tres servicios distintos, sino tres formas de nombrar la misma metodología según el alcance del trabajo: inspección para revisiones puntuales (ej. una losa antes de perforar), levantamiento para superficies o trazados extensos con entrega de plano georreferenciado, y estudio como el proceso completo con informe técnico. Gabriel Jaque 22 jul 3 min de lectura Servicio de georradar en Chile: cuándo contratarlo, qué detecta y qué debe incluir un informe técnico Antes de excavar o perforar, contar con información confiable sobre el subsuelo ayuda a reducir riesgos y sobrecostos. Te explicamos cuándo conviene contratar un servicio de georradar en Chile, qué puede detectar un estudio GPR y qué debe incluir un informe técnico serio. Gabriel Jaque 6 jul 4 min de lectura"
+    }
+  ],
+  "equivalence": [
+    {
+      "path": "/industrias",
+      "sameAsIndustries": true,
+      "sameAsTag": false
+    },
+    {
+      "path": "/industrias/mineria",
+      "sameAsIndustries": true,
+      "sameAsTag": false
+    },
+    {
+      "path": "/industrias/construccion",
+      "sameAsIndustries": true,
+      "sameAsTag": false
+    },
+    {
+      "path": "/mineria",
+      "sameAsIndustries": false,
+      "sameAsTag": false
+    },
+    {
+      "path": "/construccion",
+      "sameAsIndustries": false,
+      "sameAsTag": false
+    },
+    {
+      "path": "/blog/hashtags/Georadar",
+      "sameAsIndustries": false,
+      "sameAsTag": false
+    },
+    {
+      "path": "/blog/tags/geo-radar",
+      "sameAsIndustries": false,
+      "sameAsTag": true
+    }
+  ]
+}

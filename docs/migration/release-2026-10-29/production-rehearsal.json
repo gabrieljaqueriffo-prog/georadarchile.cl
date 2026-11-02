@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-11-02T13:57:00.060Z",
+  "sandbox": "C:\\Users\\jeik_\\AppData\\Local\\Temp\\georadarchile-production-A8ATMG",
+  "published": false,
+  "contactSendingEnabled": false,
+  "transformations": [
+    "SITE_ENV=production and CF_PAGES_BRANCH=main in isolated copy",
+    "feature-branch preview isolation checked with production flag inherited"
+  ],
+  "checks": {
+    "sitemap": true,
+    "robots": true,
+    "headers": true,
+    "errorExcluded": true,
+    "sourceAndStagingUntouched": true,
+    "previewBlocked": true
+  },
+  "sitemapCount": 37,
+  "results": [
+    {
+      "path": "/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/",
+      "ok": true
+    },
+    {
+      "path": "/capacitacion-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/capacitacion-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/mentoria-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/mentoria-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/servicios/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/servicios/",
+      "ok": true
+    },
+    {
+      "path": "/pericias/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/pericias/",
+      "ok": true
+    },
+    {
+      "path": "/instrumentos/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/instrumentos/",
+      "ok": true
+    },
+    {
+      "path": "/nosotros/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/nosotros/",
+      "ok": true
+    },
+    {
+      "path": "/casos-de-exito/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/casos-de-exito/",
+      "ok": true
+    },
+    {
+      "path": "/informes-tecnicos/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/informes-tecnicos/",
+      "ok": true
+    },
+    {
+      "path": "/industrias/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/industrias/",
+      "ok": true
+    },
+    {
+      "path": "/mineria/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/mineria/",
+      "ok": true
+    },
+    {
+      "path": "/utilities/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/utilities/",
+      "ok": true
+    },
+    {
+      "path": "/construccion/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/construccion/",
+      "ok": true
+    },
+    {
+      "path": "/georadar-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/georadar-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/contacto/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/contacto/",
+      "ok": true
+    },
+    {
+      "path": "/lem-radio-deteccion/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/lem-radio-deteccion/",
+      "ok": true
+    },
+    {
+      "path": "/experiencia/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/experiencia/",
+      "ok": true
+    },
+    {
+      "path": "/blog/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/",
+      "ok": true
+    },
+    {
+      "path": "/post/como-funciona-georadar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/como-funciona-georadar/",
+      "ok": true
+    },
+    {
+      "path": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "ok": true
+    },
+    {
+      "path": "/post/georradar-en-busqueda-forense/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/georradar-en-busqueda-forense/",
+      "ok": true
+    },
+    {
+      "path": "/post/georadar-o-georradar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/georadar-o-georradar/",
+      "ok": true
+    },
+    {
+      "path": "/post/georradar-antes-de-excavar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/georradar-antes-de-excavar/",
+      "ok": true
+    },
+    {
+      "path": "/post/servicio-georradar-chile-informe-tecnico/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/servicio-georradar-chile-informe-tecnico/",
+      "ok": true
+    },
+    {
+      "path": "/post/estudio-con-georradar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/estudio-con-georradar/",
+      "ok": true
+    },
+    {
+      "path": "/post/socavones-mineria-chile-deteccion-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/socavones-mineria-chile-deteccion-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
+      "ok": true
+    },
+    {
+      "path": "/post/capacitacion-en-georradar-gpr-aprender-a-adquirir-procesar-e-interpretar-datos/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/post/capacitacion-en-georradar-gpr-aprender-a-adquirir-procesar-e-interpretar-datos/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/precios-servicios/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/precios-servicios/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/servicios-gpr/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/servicios-gpr/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/construccion/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/construccion/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/mineria/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/mineria/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/utilities/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/utilities/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/guias-tecnicas/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/guias-tecnicas/",
+      "ok": true
+    },
+    {
+      "path": "/blog/categories/peritajes-forenses/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/categories/peritajes-forenses/",
+      "ok": true
+    },
+    {
+      "path": "/blog/tags/geo-radar/",
+      "robots": "index,follow",
+      "canonical": "https://www.georadarchile.cl/blog/tags/geo-radar/",
+      "ok": true
+    },
+    {
+      "path": "/search/",
+      "robots": "noindex,follow",
+      "canonical": "https://www.georadarchile.cl/search/",
+      "ok": true
+    }
+  ]
+}

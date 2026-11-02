@@ -1,7 +1,10 @@
 # Revisión del staging Cloudflare — 2026-10-03
 
 Staging confirmado por capturas del usuario: https://georadarchile-cl.pages.dev
-Commit desplegado observado: a96376c. Los cambios descritos abajo son locales.
+Primera revisión sobre a96376c. Actualización: `28f35c9` publicado el 2026-10-03.
+Los ajustes móviles y las reglas 301 descritos abajo ya están desplegados.
+Comprobación posterior HTTP: 28 de 28 variantes redirigen con 301 correcto.
+Workflow de validación y despliegue GitHub Pages exitosos.
 
 ## Evidencia manual
 

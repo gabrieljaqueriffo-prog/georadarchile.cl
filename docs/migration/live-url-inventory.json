@@ -1,0 +1,230 @@
+{
+  "checkedAt": "2026-10-24T14:46:03.478Z",
+  "scope": "Current Wix sitemaps only; excludes URLs known only to Search Console, backlinks or logs. Slash normalization here does not verify HTTP redirects.",
+  "sitemaps": [
+    "https://www.georadarchile.cl/sitemap.xml",
+    "https://www.georadarchile.cl/blog-posts-sitemap.xml",
+    "https://www.georadarchile.cl/blog-categories-sitemap.xml",
+    "https://www.georadarchile.cl/pages-sitemap.xml"
+  ],
+  "total": 36,
+  "missing": [],
+  "inventory": [
+    {
+      "url": "https://www.georadarchile.cl",
+      "path": "/",
+      "status": "preserved",
+      "target": "/"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog",
+      "path": "/blog",
+      "status": "preserved",
+      "target": "/blog"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/construccion",
+      "path": "/blog/categories/construccion",
+      "status": "preserved",
+      "target": "/blog/categories/construccion"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/guias-tecnicas",
+      "path": "/blog/categories/guias-tecnicas",
+      "status": "preserved",
+      "target": "/blog/categories/guias-tecnicas"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/mineria",
+      "path": "/blog/categories/mineria",
+      "status": "preserved",
+      "target": "/blog/categories/mineria"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/peritajes-forenses",
+      "path": "/blog/categories/peritajes-forenses",
+      "status": "preserved",
+      "target": "/blog/categories/peritajes-forenses"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/precios-servicios",
+      "path": "/blog/categories/precios-servicios",
+      "status": "preserved",
+      "target": "/blog/categories/precios-servicios"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/servicios-gpr",
+      "path": "/blog/categories/servicios-gpr",
+      "status": "preserved",
+      "target": "/blog/categories/servicios-gpr"
+    },
+    {
+      "url": "https://www.georadarchile.cl/blog/categories/utilities",
+      "path": "/blog/categories/utilities",
+      "status": "preserved",
+      "target": "/blog/categories/utilities"
+    },
+    {
+      "url": "https://www.georadarchile.cl/capacitacion-gpr",
+      "path": "/capacitacion-gpr",
+      "status": "preserved",
+      "target": "/capacitacion-gpr"
+    },
+    {
+      "url": "https://www.georadarchile.cl/casos-de-exito",
+      "path": "/casos-de-exito",
+      "status": "preserved",
+      "target": "/casos-de-exito"
+    },
+    {
+      "url": "https://www.georadarchile.cl/construccion",
+      "path": "/construccion",
+      "status": "preserved",
+      "target": "/construccion"
+    },
+    {
+      "url": "https://www.georadarchile.cl/contacto",
+      "path": "/contacto",
+      "status": "preserved",
+      "target": "/contacto"
+    },
+    {
+      "url": "https://www.georadarchile.cl/experiencia",
+      "path": "/experiencia",
+      "status": "preserved",
+      "target": "/experiencia"
+    },
+    {
+      "url": "https://www.georadarchile.cl/georadar-gpr",
+      "path": "/georadar-gpr",
+      "status": "preserved",
+      "target": "/georadar-gpr"
+    },
+    {
+      "url": "https://www.georadarchile.cl/industrias",
+      "path": "/industrias",
+      "status": "preserved",
+      "target": "/industrias"
+    },
+    {
+      "url": "https://www.georadarchile.cl/informes-tecnicos",
+      "path": "/informes-tecnicos",
+      "status": "preserved",
+      "target": "/informes-tecnicos"
+    },
+    {
+      "url": "https://www.georadarchile.cl/instrumentos",
+      "path": "/instrumentos",
+      "status": "preserved",
+      "target": "/instrumentos"
+    },
+    {
+      "url": "https://www.georadarchile.cl/lem-radio-deteccion",
+      "path": "/lem-radio-deteccion",
+      "status": "preserved",
+      "target": "/lem-radio-deteccion"
+    },
+    {
+      "url": "https://www.georadarchile.cl/mineria",
+      "path": "/mineria",
+      "status": "preserved",
+      "target": "/mineria"
+    },
+    {
+      "url": "https://www.georadarchile.cl/nosotros",
+      "path": "/nosotros",
+      "status": "preserved",
+      "target": "/nosotros"
+    },
+    {
+      "url": "https://www.georadarchile.cl/pericias",
+      "path": "/pericias",
+      "status": "preserved",
+      "target": "/pericias"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/capacitacion-en-georradar-gpr-aprender-a-adquirir-procesar-e-interpretar-datos",
+      "path": "/post/capacitacion-en-georradar-gpr-aprender-a-adquirir-procesar-e-interpretar-datos",
+      "status": "preserved",
+      "target": "/post/capacitacion-en-georradar-gpr-aprender-a-adquirir-procesar-e-interpretar-datos"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/como-funciona-georadar",
+      "path": "/post/como-funciona-georadar",
+      "status": "preserved",
+      "target": "/post/como-funciona-georadar"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/estudio-con-georradar",
+      "path": "/post/estudio-con-georradar",
+      "status": "preserved",
+      "target": "/post/estudio-con-georradar"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/georadar-o-georradar",
+      "path": "/post/georadar-o-georradar",
+      "status": "preserved",
+      "target": "/post/georadar-o-georradar"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/georradar-antes-de-excavar",
+      "path": "/post/georradar-antes-de-excavar",
+      "status": "preserved",
+      "target": "/post/georradar-antes-de-excavar"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/georradar-en-busqueda-forense",
+      "path": "/post/georradar-en-busqueda-forense",
+      "status": "preserved",
+      "target": "/post/georradar-en-busqueda-forense"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir",
+      "path": "/post/georradar-en-mineria-seguridad-antes-de-intervenir",
+      "status": "preserved",
+      "target": "/post/georradar-en-mineria-seguridad-antes-de-intervenir"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/localizacion-de-tuberias-ductos-con-georadar",
+      "path": "/post/localizacion-de-tuberias-ductos-con-georadar",
+      "status": "preserved",
+      "target": "/post/localizacion-de-tuberias-ductos-con-georadar"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr",
+      "path": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr",
+      "status": "preserved",
+      "target": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/servicio-georradar-chile-informe-tecnico",
+      "path": "/post/servicio-georradar-chile-informe-tecnico",
+      "status": "preserved",
+      "target": "/post/servicio-georradar-chile-informe-tecnico"
+    },
+    {
+      "url": "https://www.georadarchile.cl/post/socavones-mineria-chile-deteccion-gpr",
+      "path": "/post/socavones-mineria-chile-deteccion-gpr",
+      "status": "preserved",
+      "target": "/post/socavones-mineria-chile-deteccion-gpr"
+    },
+    {
+      "url": "https://www.georadarchile.cl/search",
+      "path": "/search",
+      "status": "preserved",
+      "target": "/search"
+    },
+    {
+      "url": "https://www.georadarchile.cl/servicios",
+      "path": "/servicios",
+      "status": "preserved",
+      "target": "/servicios"
+    },
+    {
+      "url": "https://www.georadarchile.cl/utilities",
+      "path": "/utilities",
+      "status": "preserved",
+      "target": "/utilities"
+    }
+  ]
+}

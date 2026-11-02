@@ -20,6 +20,7 @@ export default function (eleventyConfig) {
     extensions: "html",
     formats: ["webp"],
     widths: [480, 960, 1600],
+    fixOrientation: true,
     urlPath: "/assets/img/",
     outputDir: "./_site/assets/img/",
     failOnError: true,
@@ -28,7 +29,6 @@ export default function (eleventyConfig) {
     }
   });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
 
   return {
     dir: {

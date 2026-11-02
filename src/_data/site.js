@@ -5,7 +5,8 @@ export default {
   atlasUrl: "https://georadar.cl",
   locale: "es_CL",
   description: "Prospección geofísica GPR, detección no destructiva e interpretación técnica para minería, construcción, utilities y peritajes.",
-  staging: true,
+  // Production is explicit; feature-branch previews remain blocked even if they inherit the flag.
+  staging: process.env.SITE_ENV !== "production" || Boolean(process.env.CF_PAGES_BRANCH && process.env.CF_PAGES_BRANCH !== "main"),
   // Cifra pública única de proyectos. Fuente: registro interno de Geo Radar Chile; decisión de Gabriel del 2026-09-30 (Wix mostraba +220).
   projects: { label: "250+", text: "Más de 250 proyectos", asOf: "2026-09-30" },
   language: "es-CL",
