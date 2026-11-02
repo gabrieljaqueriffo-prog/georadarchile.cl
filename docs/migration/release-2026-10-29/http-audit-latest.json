@@ -1,18 +1,18 @@
 {
-  "checkedAt": "2026-11-02T13:57:01.678Z",
+  "checkedAt": "2026-11-02T14:54:41.586Z",
   "base": "https://georadarchile-cl.pages.dev",
   "scope": "HTTP and SSR main comparison; no email sent; not full visual or editorial parity",
   "results": [
     {
       "kind": "page",
-      "path": "/",
+      "path": "/capacitacion-gpr/",
       "status": 200,
-      "canonical": "https://www.georadarchile.cl/",
+      "canonical": "https://www.georadarchile.cl/capacitacion-gpr/",
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -22,8 +22,19 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -33,19 +44,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/capacitacion-gpr/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/capacitacion-gpr/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -55,52 +55,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/instrumentos/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/instrumentos/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/industrias/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/industrias/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/nosotros/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/nosotros/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/casos-de-exito/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/casos-de-exito/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -110,8 +66,85 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/instrumentos/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/instrumentos/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/nosotros/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/nosotros/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/industrias/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/industrias/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/casos-de-exito/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/casos-de-exito/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/construccion/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/construccion/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/utilities/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/utilities/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/georadar-gpr/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/georadar-gpr/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -122,8 +155,8 @@
       "header": "noindex, nofollow",
       "h1": 1,
       "mainMatchesLocal": false,
-      "publicBuildSettingsOnly": false,
-      "ok": false
+      "publicBuildSettingsOnly": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -133,63 +166,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/construccion/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/construccion/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/georadar-gpr/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/georadar-gpr/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/utilities/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/utilities/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/post/como-funciona-georadar/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/post/como-funciona-georadar/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -199,14 +177,14 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
-      "path": "/blog/",
+      "path": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
       "status": 200,
-      "canonical": "https://www.georadarchile.cl/blog/",
+      "canonical": "https://www.georadarchile.cl/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
@@ -221,8 +199,30 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/blog/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/blog/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/post/como-funciona-georadar/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/post/como-funciona-georadar/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -232,19 +232,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/post/georradar-en-busqueda-forense/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/post/georradar-en-busqueda-forense/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -254,8 +243,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -265,8 +254,19 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/post/georradar-en-busqueda-forense/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/post/georradar-en-busqueda-forense/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -276,19 +276,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -298,8 +287,19 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/post/georradar-en-mineria-seguridad-antes-de-intervenir/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -309,8 +309,8 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
+      "mainMatchesLocal": true,
+      "ok": true
     },
     {
       "kind": "page",
@@ -331,28 +331,6 @@
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
-      "mainMatchesLocal": false,
-      "ok": false
-    },
-    {
-      "kind": "page",
-      "path": "/blog/categories/mineria/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/blog/categories/mineria/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": true,
-      "ok": true
-    },
-    {
-      "kind": "page",
-      "path": "/blog/categories/guias-tecnicas/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/blog/categories/guias-tecnicas/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
       "mainMatchesLocal": true,
       "ok": true
     },
@@ -361,17 +339,6 @@
       "path": "/blog/categories/utilities/",
       "status": 200,
       "canonical": "https://www.georadarchile.cl/blog/categories/utilities/",
-      "robots": "noindex,nofollow",
-      "header": "noindex, nofollow",
-      "h1": 1,
-      "mainMatchesLocal": true,
-      "ok": true
-    },
-    {
-      "kind": "page",
-      "path": "/blog/categories/servicios-gpr/",
-      "status": 200,
-      "canonical": "https://www.georadarchile.cl/blog/categories/servicios-gpr/",
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
@@ -391,9 +358,31 @@
     },
     {
       "kind": "page",
-      "path": "/blog/tags/geo-radar/",
+      "path": "/blog/categories/mineria/",
       "status": 200,
-      "canonical": "https://www.georadarchile.cl/blog/tags/geo-radar/",
+      "canonical": "https://www.georadarchile.cl/blog/categories/mineria/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/blog/categories/servicios-gpr/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/blog/categories/servicios-gpr/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
+      "path": "/blog/categories/guias-tecnicas/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/blog/categories/guias-tecnicas/",
       "robots": "noindex,nofollow",
       "header": "noindex, nofollow",
       "h1": 1,
@@ -413,6 +402,17 @@
     },
     {
       "kind": "page",
+      "path": "/blog/tags/geo-radar/",
+      "status": 200,
+      "canonical": "https://www.georadarchile.cl/blog/tags/geo-radar/",
+      "robots": "noindex,nofollow",
+      "header": "noindex, nofollow",
+      "h1": 1,
+      "mainMatchesLocal": true,
+      "ok": true
+    },
+    {
+      "kind": "page",
       "path": "/blog/categories/peritajes-forenses/",
       "status": 200,
       "canonical": "https://www.georadarchile.cl/blog/categories/peritajes-forenses/",
@@ -424,15 +424,15 @@
     },
     {
       "kind": "redirect",
-      "path": "/copia-de-experiencia",
+      "path": "/blog/categories/georradar/",
       "status": 301,
-      "location": "/experiencia/",
-      "expected": "/experiencia/",
+      "location": "/blog/tags/geo-radar/",
+      "expected": "/blog/tags/geo-radar/",
       "ok": true
     },
     {
       "kind": "redirect",
-      "path": "/copia-de-experiencia/",
+      "path": "/copia-de-experiencia",
       "status": 301,
       "location": "/experiencia/",
       "expected": "/experiencia/",
@@ -456,10 +456,10 @@
     },
     {
       "kind": "redirect",
-      "path": "/blog/categories/georradar/",
+      "path": "/copia-de-experiencia/",
       "status": 301,
-      "location": "/blog/tags/geo-radar/",
-      "expected": "/blog/tags/geo-radar/",
+      "location": "/experiencia/",
+      "expected": "/experiencia/",
       "ok": true
     },
     {
@@ -472,7 +472,7 @@
     },
     {
       "kind": "redirect",
-      "path": "/industrias/mineria/",
+      "path": "/industrias/construccion",
       "status": 301,
       "location": "/industrias/",
       "expected": "/industrias/",
@@ -481,14 +481,6 @@
     {
       "kind": "redirect",
       "path": "/industrias/mineria",
-      "status": 301,
-      "location": "/industrias/",
-      "expected": "/industrias/",
-      "ok": true
-    },
-    {
-      "kind": "redirect",
-      "path": "/industrias/construccion",
       "status": 301,
       "location": "/industrias/",
       "expected": "/industrias/",
@@ -512,6 +504,14 @@
     },
     {
       "kind": "redirect",
+      "path": "/industrias/mineria/",
+      "status": 301,
+      "location": "/industrias/",
+      "expected": "/industrias/",
+      "ok": true
+    },
+    {
+      "kind": "redirect",
       "path": "/industrias/construccion/",
       "status": 301,
       "location": "/industrias/",
@@ -528,10 +528,10 @@
     },
     {
       "kind": "redirect",
-      "path": "/usos-aplicaciones-gpr/",
+      "path": "/post/geo-radar-excavacion-exploratoria-prospeccion-no-destructiva",
       "status": 301,
-      "location": "/georadar-gpr/",
-      "expected": "/georadar-gpr/",
+      "location": "/post/georradar-antes-de-excavar/",
+      "expected": "/post/georradar-antes-de-excavar/",
       "ok": true
     },
     {
@@ -544,10 +544,10 @@
     },
     {
       "kind": "redirect",
-      "path": "/post/geo-radar-excavacion-exploratoria-prospeccion-no-destructiva",
+      "path": "/blog/hashtags/Georadar/",
       "status": 301,
-      "location": "/post/georradar-antes-de-excavar/",
-      "expected": "/post/georradar-antes-de-excavar/",
+      "location": "/blog/tags/geo-radar/",
+      "expected": "/blog/tags/geo-radar/",
       "ok": true
     },
     {
@@ -560,18 +560,10 @@
     },
     {
       "kind": "redirect",
-      "path": "/blog/hashtags/Georadar/",
+      "path": "/usos-aplicaciones-gpr/",
       "status": 301,
-      "location": "/blog/tags/geo-radar/",
-      "expected": "/blog/tags/geo-radar/",
-      "ok": true
-    },
-    {
-      "kind": "redirect",
-      "path": "/post/localizacion-de-ductos-con-georadar/",
-      "status": 301,
-      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
-      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "location": "/georadar-gpr/",
+      "expected": "/georadar-gpr/",
       "ok": true
     },
     {
@@ -580,14 +572,6 @@
       "status": 301,
       "location": "/lem-radio-deteccion/",
       "expected": "/lem-radio-deteccion/",
-      "ok": true
-    },
-    {
-      "kind": "redirect",
-      "path": "/post/localizacion-de-ductos-con-georadar",
-      "status": 301,
-      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
-      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
       "ok": true
     },
     {
@@ -608,7 +592,7 @@
     },
     {
       "kind": "redirect",
-      "path": "/blog/tags/deteccion-de-ductos/",
+      "path": "/post/localizacion-de-ductos-con-georadar/",
       "status": 301,
       "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
       "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
@@ -616,18 +600,18 @@
     },
     {
       "kind": "redirect",
-      "path": "/post/como-forma-georradar/",
+      "path": "/post/localizacion-de-ductos-con-georadar",
       "status": 301,
-      "location": "/post/como-funciona-georadar/",
-      "expected": "/post/como-funciona-georadar/",
+      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
       "ok": true
     },
     {
       "kind": "redirect",
-      "path": "/post/como-georradar-gpr-explicacion-tecnica/",
+      "path": "/blog/tags/deteccion-de-ductos/",
       "status": 301,
-      "location": "/post/como-funciona-georadar/",
-      "expected": "/post/como-funciona-georadar/",
+      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
       "ok": true
     },
     {
@@ -640,7 +624,15 @@
     },
     {
       "kind": "redirect",
-      "path": "/post/como-georradar-gpr-explicacion-tecnica",
+      "path": "/post/localizacion-de-tuberias-ductos-con-georradar",
+      "status": 301,
+      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "ok": true
+    },
+    {
+      "kind": "redirect",
+      "path": "/post/como-georradar-gpr-explicacion-tecnica/",
       "status": 301,
       "location": "/post/como-funciona-georadar/",
       "expected": "/post/como-funciona-georadar/",
@@ -656,10 +648,18 @@
     },
     {
       "kind": "redirect",
-      "path": "/post/localizacion-de-tuberias-ductos-con-georradar",
+      "path": "/post/como-forma-georradar/",
       "status": 301,
-      "location": "/post/localizacion-de-tuberias-ductos-con-georadar/",
-      "expected": "/post/localizacion-de-tuberias-ductos-con-georadar/",
+      "location": "/post/como-funciona-georadar/",
+      "expected": "/post/como-funciona-georadar/",
+      "ok": true
+    },
+    {
+      "kind": "redirect",
+      "path": "/post/como-georradar-gpr-explicacion-tecnica",
+      "status": 301,
+      "location": "/post/como-funciona-georadar/",
+      "expected": "/post/como-funciona-georadar/",
       "ok": true
     },
     {
@@ -680,15 +680,15 @@
     },
     {
       "kind": "redirect",
-      "path": "/mentoria/",
+      "path": "/post/que-es-georadar-gpr-chile-prospeccion-no-destructiva-con-georradar-en-chile-gpr",
       "status": 301,
-      "location": "/mentoria-gpr/",
-      "expected": "/mentoria-gpr/",
+      "location": "/post/que-es-georadar-gpr-chile-prospecci%C3%B3n-no-destructiva-con-georradar-en-chile-gpr/",
+      "expected": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
       "ok": true
     },
     {
       "kind": "redirect",
-      "path": "/mentoria",
+      "path": "/mentoria/",
       "status": 301,
       "location": "/mentoria-gpr/",
       "expected": "/mentoria-gpr/",
@@ -704,10 +704,10 @@
     },
     {
       "kind": "redirect",
-      "path": "/post/que-es-georadar-gpr-chile-prospeccion-no-destructiva-con-georradar-en-chile-gpr",
+      "path": "/mentoria",
       "status": 301,
-      "location": "/post/que-es-georadar-gpr-chile-prospecci%C3%B3n-no-destructiva-con-georradar-en-chile-gpr/",
-      "expected": "/post/que-es-georadar-gpr-chile-prospección-no-destructiva-con-georradar-en-chile-gpr/",
+      "location": "/mentoria-gpr/",
+      "expected": "/mentoria-gpr/",
       "ok": true
     },
     {
